@@ -1,0 +1,160 @@
+@font-face {
+    font-family:'DelaGothicOne';
+    src: url('fonts/DelaGothicOne-Regular.ttf');
+}
+
+
+
+/* Override for the specific row containing the h2 */
+.interior_ai *{
+    box-sizing: border-box;
+}
+.interior_ai .row.title {
+    display: flex;
+    justify-content: center;
+    height:80px;
+}
+
+.interior_ai h1{
+    text-align: center;
+    width: 100%;
+    font-size: 60px;
+    font-family: "Open Sans", arial, sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-shadow: 1px 0 currentColor, 0 1px currentColor, -1px 0 currentColor, 0 -1px currentColor;
+}
+
+/*Intro content*/
+.interior_ai .row.text-center {
+    display: flex;
+    justify-content: center;
+    /*height: 100px;*/
+    margin-top: 50px; /* Space below the title */
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+.interior_ai h1 {
+    text-align: center;
+    margin-bottom: 30px; /* Space below the title */
+}
+
+.interior_ai .row.text-center h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px; /* Space between title and text */
+    text-align: left;
+}
+
+.interior_ai .row.text-center p {
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+}
+
+.line {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-top: 1px solid #000; /* Creates a black line with 1px thickness */
+    /*opacity of the border*/
+    opacity: 0.2;
+    height: 0; /* Ensures the line has no height */
+}
+
+.interior_ai .row.part{
+    margin-top:2vh;
+}
+
+.row.part .big-number {
+    font-size: 3em; /* Adjust the font size as needed */
+    /*font color*/
+    color: lightgrey;
+    vertical-align: bottom; /* Aligns the text to the bottom */
+    display: inline-block; /* Change to inline-block for vertical-align to work */
+    line-height: 0.8; /* Adjust line height to align it at the bottom */
+}
+
+.row.part h2 {
+    letter-spacing: 2px;
+    font-size: 3.5em;
+    display: inline; /* Default inline display for h2 */
+    vertical-align: bottom; /* Aligns the text to the bottom */
+    line-height: 0.8; /* Adjust this as needed */
+}
+
+.row.part p{
+    margin-top: 5vh;
+}
+
+.research_q{
+    font-family: Nunito, sans-serif;
+    font-size: 3em;
+    /*the color of the text*/
+    color: black;
+    line-height: 1.5em;
+}
+
+h3{
+    margin-top: 5vh;
+}
+.big_title{
+    margin-top: 10vh;
+}
+
+h4{
+    margin-top: 1vh;
+    line-height: 1.3em;
+}
+
+.container.statement {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5vh;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center text alignment */
+    position: relative;
+    background-color: white;
+}
+
+.container.statement .middle-text {
+    position: absolute;
+    z-index: 1;
+    font-family: Nunito, sans-serif;
+    font-size: 2.5em;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.container.statement.visible .middle-text {
+    opacity: 1;
+}
+
+
+/*Audio*/
+.audioControl {
+    width: 30px;
+    height: 30px;
+    border:0;
+    background-color: transparent;
+    background-size: cover;
+    transition: box-shadow 0.3s; /* Smooth transition for the shadow */
+    border-radius: 10px;
+    padding:0;
+}
+.musicTitle, .audioControl {
+    display: inline-block;
+    vertical-align: middle; /* Aligns them vertically in the middle */
+}
+
+.musicTitle {
+    font-family: Nunito, sans-serif;
+    font-size: 12px;
+}
+
+
